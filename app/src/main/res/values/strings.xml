@@ -2,18 +2,18 @@
     <string name="app_name">List Choice</string>
     <string name="get_checked_items">Get checked items</string>
     <string-array name="names">
-        <item>Иван</item>
-        <item>Марья</item>
-        <item>Петр</item>
-        <item>Антон</item>
-        <item>Даша</item>
-        <item>Борис</item>
-        <item>Костя</item>
-        <item>Игорь</item>
-        <item>Анна</item>
-        <item>Денис</item>
-        <item>Вадим</item>
-        <item>Ольга</item>
-        <item>Сергей</item>
+        <item>Ethan</item>
+        <item>Emily</item>
+        <item>Liam</item>
+        <item>Noah</item>
+        <item>Ava</item>
+        <item>Ryan</item>
+        <item>Lucas</item>
+        <item>Logan</item>
+        <item>Julia</item>
+        <item>Tyler</item>
+        <item>Cameron</item>
+        <item>Olivia</item>
+        <item>Benjamin</item>
     </string-array>
 </resources>

@@ -10,14 +10,13 @@ import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     companion object {
         const val LOG_TAG = "myLogs"
     }
 
-    lateinit var lvMain: ListView
+    private lateinit var lvMain: ListView
     private lateinit var names: Array<String>
 
     /** Called when the activity is first created.  */
@@ -25,9 +24,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         lvMain = findViewById<View>(R.id.lv_main) as ListView
-        /** setting the mode for selecting list items */
+        /** Setting the mode for selecting list items. */
 
-         /** for single choice */
+        /** For single choice. */
 //        lvMain.choiceMode = ListView.CHOICE_MODE_SINGLE
 
         /* Create an adapter using an array from a resource file */
@@ -35,7 +34,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 //                this, R.array.names,
 //                android.R.layout.simple_list_item_single_choice)
 
-        /** for multiple choice */
+        /** For multiple choice. */
         lvMain.choiceMode = ListView.CHOICE_MODE_MULTIPLE
 
         val adapter = ArrayAdapter.createFromResource(
@@ -51,13 +50,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
    override fun onClick(arg0: View?) {
-        /** writing the selected items to the log */
+       /** Writing the selected items to the log. */
 
-       /** for single choice */
+       /** For single choice. */
 //        Log.d(LOG_TAG, "checked: " + names[lvMain.checkedItemPosition])
 //       Toast.makeText(this, "checked: " + names[lvMain.checkedItemPosition], Toast.LENGTH_LONG).show()
 
-       /** for multiple choice */
+       /** For multiple choice. */
        Log.d(LOG_TAG, "checked: ")
        val sbArray: SparseBooleanArray = lvMain.checkedItemPositions
        val checkedItems:MutableList<String> = mutableListOf()
